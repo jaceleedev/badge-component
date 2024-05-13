@@ -1,9 +1,29 @@
 /* Put any custom CSS styles here.  */
 /* Be sure to delete the <style> tag in index.html if you want to use this stylesheet. */
+:root {
+  --colors-white: #ffffff;
+  --colors-indigo-700: #4338ca;
+  --colors-indigo-200: #c7d2fe;
+  --colors-indigo-50: #eef2ff;
+  --colors-green-700: #15803d;
+  --colors-green-200: #bbf7d0;
+  --colors-green-50: #f0fdf4;
+  --colors-amber-700: #b45309;
+  --colors-amber-200: #fde68a;
+  --colors-amber-50: #fffbeb;
+  --colors-red-600: #dc2626;
+  --colors-red-200: #fecaca;
+  --colors-red-50: #fef2f2;
+  --colors-neutral-900: #171717;
+  --colors-neutral-600: #525252;
+  --colors-neutral-200: #e6e6e6;
+  --colors-gray-50: #f9fafb;
+}
+
 body {
   margin: 0;
-  font-family: "Noto Sans", system-ui, -apple-system, BlinkMacSystemFont,
-    "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue",
+  font-family: 'Noto Sans', system-ui, -apple-system, BlinkMacSystemFont,
+    'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue',
     sans-serif;
   min-height: 100vh;
 }

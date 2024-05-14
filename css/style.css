@@ -34,6 +34,7 @@
 
 /* Size classes */
 .badge_size_sm {
+  height: 22px;
   padding: 2px 6px;
 
   font-family: 'Noto Sans', sans-serif;
@@ -43,6 +44,7 @@
   line-height: 16px;
 }
 .badge_size_md {
+  height: 26px;
   padding: 2px 8px;
 
   font-family: 'Noto Sans', sans-serif;
@@ -52,6 +54,7 @@
   line-height: 20px;
 }
 .badge_size_lg {
+  height: 30px;
   padding: 4px 10px;
 
   font-family: 'Noto Sans', sans-serif;
@@ -99,22 +102,22 @@ body {
     'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue',
     sans-serif;
   min-height: 100vh;
+
+  padding: 200px 0;
 }
 
 * {
   box-sizing: border-box;
 }
 
-.credits {
-  color: #777;
-  position: fixed;
-  bottom: 24px;
-  left: 24px;
-  font-size: 11px;
-  text-align: center;
-}
+.content {
+  display: grid;
+  grid-template-rows: repeat(5, 30px);
+  grid-template-columns: 45px 54px 58px;
+  align-items: center;
+  gap: 24px;
 
-.credits a {
-  color: #000;
-  font-weight: bold;
+  width: 240px;
+
+  margin: 0 auto;
 }

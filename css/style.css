@@ -20,21 +20,77 @@
   --colors-gray-50: #f9fafb;
 }
 
-/* Typography */
-.text-xs {
+/* Base class */
+.badge {
+  display: flex;
+  align-items: center;
+
+  text-align: center;
+
+  border-radius: 9999px;
+  border-width: 1px;
+  border-style: solid;
+}
+
+/* Size classes */
+.badge_size_sm {
+  padding: 2px 6px;
+
   font-family: 'Noto Sans', sans-serif;
   font-size: 12px;
   font-style: normal;
   font-weight: 400;
   line-height: 16px;
 }
+.badge_size_md {
+  padding: 2px 8px;
 
-.text-sm {
   font-family: 'Noto Sans', sans-serif;
   font-size: 14px;
   font-style: normal;
   font-weight: 400;
   line-height: 20px;
+}
+.badge_size_lg {
+  padding: 4px 10px;
+
+  font-family: 'Noto Sans', sans-serif;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 20px;
+}
+
+/* Color classes */
+.badge_color_neutral {
+  color: var(--colors-neutral-600);
+
+  border-color: var(--colors-neutral-200);
+  background-color: var(--colors-gray-50);
+}
+.badge_color_error {
+  color: var(--colors-red-600);
+
+  border-color: var(--colors-red-200);
+  background-color: var(--colors-red-50);
+}
+.badge_color_warning {
+  color: var(--colors-amber-700);
+
+  border-color: var(--colors-amber-200);
+  background-color: var(--colors-amber-50);
+}
+.badge_color_success {
+  color: var(--colors-green-700);
+
+  border-color: var(--colors-green-200);
+  background-color: var(--colors-green-50);
+}
+.badge_color_brand {
+  color: var(--colors-indigo-700);
+
+  border-color: var(--colors-indigo-200);
+  background-color: var(--colors-indigo-50);
 }
 
 body {

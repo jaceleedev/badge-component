@@ -22,7 +22,7 @@
 
 /* Base class */
 .badge {
-  display: flex;
+  display: inline-flex;
   align-items: center;
 
   text-align: center;
@@ -34,8 +34,6 @@
 
 /* Size classes */
 .badge_size_sm {
-  width: 43px;
-  height: 20px;
   padding: 2px 6px;
 
   font-family: 'Noto Sans', sans-serif;
@@ -45,8 +43,6 @@
   line-height: 16px;
 }
 .badge_size_md {
-  width: 52px;
-  height: 24px;
   padding: 2px 8px;
 
   font-family: 'Noto Sans', sans-serif;
@@ -56,8 +52,6 @@
   line-height: 20px;
 }
 .badge_size_lg {
-  width: 56px;
-  height: 28px;
   padding: 4px 10px;
 
   font-family: 'Noto Sans', sans-serif;
@@ -114,13 +108,17 @@ body {
 }
 
 .content {
-  display: grid;
-  grid-template-rows: repeat(5, 28px);
-  grid-template-columns: 43px 52px 56px;
-  align-items: center;
+  display: flex;
+  flex-direction: column;
   gap: 24px;
 
   width: 240px;
 
   margin: 0 auto;
+}
+
+.row {
+  display: flex;
+  align-items: center;
+  gap: 24px;
 }
